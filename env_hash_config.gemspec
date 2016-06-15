@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.files = Dir['lib/**/*.rb']
   spec.homepage = 'https://github.com/dinosaurjr10/env_hash_config'
   spec.license = 'MIT'
-  spec.name = 'env-hash-config'
+  spec.name = 'env_hash_config'
   spec.required_ruby_version = '>= 2.0.0'
   spec.summary = %q{Creates a configuration object from ENV.}
   spec.version = EnvHashConfig::VERSION
