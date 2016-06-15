@@ -32,10 +32,13 @@ To specify default options:
 
     EnvHashConfig.create default_options: { default: value }
 
-To coerce integer option values:
+To convert values into integers:
 
     EnvHashConfig.create integer_options: [:integer_one, :integer_two]
 
+To convert comma separated values into arrays:
+
+    EnvHashConfig.create array_options: [:array_one, :array_two]
 
 To preprocess options:
 
