@@ -11,7 +11,7 @@ Installation
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'env-hash-config'
+gem 'env_hash_config'
 ```
 
 And then execute:
@@ -20,7 +20,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install env-hash-config
+    $ gem install env_hash_config
 
 Usage
 -----
@@ -57,7 +57,7 @@ push git commits and tags, and push the `.gem` file to [rubygems.org](https://ru
 
 Contributing
 ------------
-Bug reports and pull requests are welcome on GitHub at https://github.com/dinosaurjr10/env-hash-config.
+Bug reports and pull requests are welcome on GitHub at https://github.com/dinosaurjr10/env_hash_config.
 
 License
 -------
