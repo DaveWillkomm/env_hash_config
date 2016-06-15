@@ -16,12 +16,22 @@ describe EnvHashConfig do
     end
 
     it 'does not implicitly convert option values' do
+      expect(subject.array_one).to eq('a,b')
       expect(subject.integer_one).to eq('1')
     end
 
     it 'supports hashes other than ENV' do
       config = described_class.create options: { 'THIS_IS_NOT_AN_ENV_KEY' => 'this is not an env value' }
       expect(config.this_is_not_an_env_key).to eq('this is not an env value')
+    end
+
+    describe 'given array options' do
+      subject { described_class.create array_options: [:array_one, :array_two] }
+
+      it 'converts array options' do
+        expect(subject.array_one).to eq(['a','b'])
+        expect(subject.array_two).to eq(['1','2'])
+      end
     end
 
     describe 'given default options' do
