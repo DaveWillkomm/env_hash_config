@@ -34,6 +34,20 @@ describe EnvHashConfig do
       end
     end
 
+    describe 'given boolean options' do
+      subject { described_class.create boolean_options: [:boolean_true, :boolean_false, :boolean_other, :boolean_blah] }
+
+      it 'converts boolean options' do
+        expect(subject.boolean_true).to be(true)
+        expect(subject.boolean_false).to be(false)
+        expect(subject.boolean_other).to be(false)
+      end
+
+      it 'does not default boolean options' do
+        expect(subject.boolean_blah).to be_nil
+      end
+    end
+
     describe 'given default options' do
       subject do
         described_class.create(
