@@ -32,6 +32,14 @@ To specify default options:
 
     EnvHashConfig.create default_options: { default: value }
 
+To convert values into booleans:
+
+    EnvHashConfig.create boolean_options: [:boolean_one, :boolean_two]
+
+The case sensitive string `'true'` is the only value converted into `true`; all other values are converted into `false`.
+If you want a boolean option to always have a value, add its default to `default_values`, e.g.
+`default_values: { boolean_one: false }`.
+
 To convert values into integers:
 
     EnvHashConfig.create integer_options: [:integer_one, :integer_two]
