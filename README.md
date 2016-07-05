@@ -37,8 +37,8 @@ To convert values into booleans:
     EnvHashConfig.create boolean_options: [:boolean_one, :boolean_two]
 
 The case sensitive string `'true'` is the only value converted into `true`; all other values are converted into `false`.
-If you want a boolean option to always have a value, add its default to `default_values`, e.g.
-`default_values: { boolean_one: false }`.
+If you want a boolean option to default to true (instead of accessing an unknown key returning the falsey `nil`), add
+it to `default_values`, e.g. `default_values: { boolean_one: true }`.
 
 To convert values into integers:
 
