@@ -1,4 +1,4 @@
-ENV Hash Configuration
+ENV Hash Configuration [![Build Status](https://travis-ci.org/dinosaurjr10/env_hash_config.svg?branch=master)](https://travis-ci.org/dinosaurjr10/env_hash_config) [![Coverage Status](https://coveralls.io/repos/github/dinosaurjr10/env_hash_config/badge.svg)](https://coveralls.io/github/dinosaurjr10/env_hash_config)
 ======================
 ENV Hash Configuration is a trivial gem that makes it easy to transmogrify ENV into a configuration object suitable for
 application consumption.
